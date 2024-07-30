@@ -1,0 +1,230 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_neutral10"
+    tools:context=".MainActivity">
+
+    <!-- Container at the top -->
+
+    <LinearLayout
+        android:id="@+id/quickstart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/material_dynamic_neutral30"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:text="Quickstart"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Sets"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/sets_minus"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_minus" />
+
+                <EditText
+                    android:id="@+id/sets_number"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:ems="2"
+                    android:hint="00"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:background="@null" />
+
+                <ImageButton
+                    android:id="@+id/sets_add"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_add"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Work"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/work_minus"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_minus" />
+
+                <EditText
+                    android:id="@+id/work_minutes"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:ems="2"
+                    android:hint="00"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:background="@null" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="center_vertical"
+                    android:padding="4dp"/>
+
+                <EditText
+                    android:id="@+id/work_seconds"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:ems="2"
+                    android:hint="00"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:background="@null" />
+
+                <ImageButton
+                    android:id="@+id/work_add"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_add"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rest"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/rest_minus"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_minus" />
+
+                <EditText
+                    android:id="@+id/rest_minutes"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:ems="2"
+                    android:hint="00"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:background="@null" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="center_vertical"
+                    android:padding="4dp"/>
+
+                <EditText
+                    android:id="@+id/rest_seconds"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:ems="2"
+                    android:hint="00"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:background="@null" />
+
+                <ImageButton
+                    android:id="@+id/rest_add"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_add"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:clickable="true"
+        android:backgroundTint="@color/material_dynamic_neutral30"
+        app:rippleColor="@color/white"
+        app:srcCompat="@drawable/ic_play_arrow"
+        app:tint="@android:color/white" />
+
+
+</RelativeLayout>
